@@ -4,26 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Origin six</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <!-- HTML -->
   <body>
-    <header>
-      <h1>beatutysalon.</h1>
-      <div>...</div>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">beatuty<span>salon.</span></a>
+        <div class="menu">menu</div>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <img
-          src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-          alt="Cabelereira escovando o cabelo da cliente"
-        />
-        <h1>Saúde natural para sesus cabelos</h1>
-        <p>
-          Um salão exclusivo em São Paulo, especializado em tratamentos
-          naturais.
-        </p>
-        <a href="#">Agendar um horário.</a>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+              alt="Cabelereira escovando o cabelo da cliente"
+            />
+          </div>
+          <div class="text">
+            <h1>Saúde natural para sesus cabelos</h1>
+            <p>
+              Um salão exclusivo em São Paulo, especializado em tratamentos
+              naturais.
+            </p>
+            <a href="#" class="button">Agendar um horário</a>
+          </div>
+        </div>
       </section>
+      <div class="divider-1"></div>
     </main>
     <footer></footer>
   </body>
