@@ -6,6 +6,11 @@
     <title>Origin Six</title>
     <!-- Icons -->
     <link rel="stylesheet" href="./assets/fonts/style.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <!-- Fonts -->
@@ -36,6 +41,7 @@
     </header>
 
     <main>
+      <!-- Home -->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -55,6 +61,7 @@
         </div>
       </section>
       <div class="divider-1"></div>
+      <!-- About -->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
@@ -89,6 +96,7 @@
         </div>
       </section>
       <div class="divider-2"></div>
+      <!-- Services -->
       <section class="section" id="services">
         <div class="container grid">
           <header>
@@ -99,9 +107,9 @@
               exclusivos e totalmente naturais.
             </p>
           </header>
-          <div class="cards">
+          <div class="cards grid">
             <div class="card">
-              <div class="icon-woman-hair"></div>
+              <i class="icon-woman-hair"></i>
               <h3 class="title">Terapia capilar</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
@@ -110,7 +118,7 @@
               </p>
             </div>
             <div class="card">
-              <div class="icon-trim"></div>
+              <i class="icon-trim"></i>
               <h3 class="title">Corte</h3>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
@@ -119,7 +127,7 @@
               </p>
             </div>
             <div class="card">
-              <div class="icon-cosmetic"></div>
+              <i class="icon-cosmetic"></i>
               <h3 class="title">Tratamentos</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
@@ -130,7 +138,67 @@
           </div>
         </div>
       </section>
+      <div class="divider-1"></div>
+      <!-- Testimonials -->
+      <section class="section" id="testimonials">
+        <div class="container swiper">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui.</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ullam ut tenetur, blanditiis ducimus
+                    veritatis numquam sint modi sequi?
+                  </p>
+                  <cite
+                    ><img
+                      src="https://randomuser.me/api/portraits/women/89.jpg"
+                      alt="Cliente 1"
+                    />Wanessa Souza</cite
+                  >
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Facilis, odio dolorum doloremque nostrum
+                    iusto provident blanditiis delectus quisquam.
+                  </p>
+                  <cite
+                    ><img
+                      src="https://randomuser.me/api/portraits/women/15.jpg"
+                      alt="Cliente 2"
+                    />Iris Roberta</cite
+                  >
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Harum earum molestiae quod quae quis
+                    aliquam consequatur debitis similique.
+                  </p>
+                  <cite
+                    ><img
+                      src="https://randomuser.me/api/portraits/women/11.jpg"
+                      alt="Cliente 3"
+                    />Alana Fernandes</cite
+                  >
+                </blockquote>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script/main.js"></script>
   </body>
 </html>
