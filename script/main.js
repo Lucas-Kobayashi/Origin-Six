@@ -55,6 +55,17 @@ scrollReveal.reveal(
   #services .header, #services .card,
   #testimonials .headers, #testimonials .testimonials,
   #contact .text, #contact.links
+  footer .brand, footer .social
   `,
   { interval: 100 }
 );
+
+// Back to top
+const backToTopButton = document.querySelector(".back-to-top");
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 600) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+});
