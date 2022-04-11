@@ -1,5 +1,4 @@
 // Toggle menu on and off
-
 const nav = document.querySelector("#header nav");
 const toggle = document.querySelectorAll("nav .toggle");
 
@@ -19,11 +18,9 @@ for (const link of links) {
 }
 
 // Change header when scroll
-
+const header = document.querySelector("#header");
+const navHeight = header.offsetHeight;
 function changeHeaderWhenScroll() {
-  const header = document.querySelector("#header");
-  const navHeight = header.offsetHeight;
-
   if (window.scrollY >= navHeight) {
     header.classList.add("scroll");
   } else {
@@ -68,10 +65,9 @@ scrollReveal.reveal(
 );
 
 // Back to top
+const backToTopButton = document.querySelector(".back-to-top");
 
 function backToTop() {
-  const backToTopButton = document.querySelector(".back-to-top");
-
   if (window.scrollY >= 600) {
     backToTopButton.classList.add("show");
   } else {
